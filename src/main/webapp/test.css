@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333; /* Text color */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensures it covers the viewport at minimum */
+    background-attachment: fixed;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 999;
+  }
+  
+  .getquotetext {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #0082e6;
+  }
+  
+  .blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .left, .right {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+.trip-button.active, .trip-button:hover {
+    background-color: #0082e6;
+    color: #fff;
+  }
+  
+  .left label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /*Contact css*/
+  .fullname-input-container, .contact-input-container, .email-input-container {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .fullname-input-container input, .contact-input-container input, .email-input-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Adjust padding to make space for icon on the right */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .fullname-icon, .contact-icon, .email-icon {
+    position: absolute;
+    right: 10px; /* Move icons to the right */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .fullname-icon:before {
+    content: "\f007"; /* Font Awesome icon code for user */
+    font-family: 'FontAwesome';
+  }
+  
+  .contact-icon:before {
+    content: "\f095"; /* Font Awesome icon code for phone */
+    font-family: 'FontAwesome';
+  }
+  
+  .email-icon:before {
+    content: "\f0e0"; /* Font Awesome icon code for envelope */
+    font-family: 'FontAwesome';
+  }
+ 
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .quantity-icon {
+    font-size: 24px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #0082e6;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 5px; /* Space between buttons and input */
+  }
+  
+  .quantity-input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  
+  .trip-detail-container,
+  .price-detail-container {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 20px; /* Space between boxes */
+  }
+  
+  .trip-details-box {
+      margin-bottom: 15px; /* Space below the trip details box */
+  }
+  
+  .price-detail-container {
+      margin-top: 40px; /* Increased space above the price details box */
+  }
+  
+  .trip-detail-title {
+      margin-bottom: 10px;
+      color: #0082e6;
+  }
+  
+  .trip-detail-container table,
+  .price-detail-container table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+  }
+  
+  .trip-detail-container table td,
+  .price-detail-container table td {
+      padding: 5px 0;
+  }
+  
+  .trip-detail-container hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 15px 0;
+  }
+  
+  .trip-detail-container table td:nth-child(2),
+  .price-detail-container table td:nth-child(2) {
+      text-align: right; /* Align price to the right */
+  }
+  
+  
+  .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #0082e6;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: #006bb3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blocks {
+      flex-direction: column;
+    }
+  
+    .getquotetext {
+      font-size: 24px;
+    }
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d4875;
+    color: #fff;
+    margin-top: 60px;
+    bottom: 0;
+    width: 100%;
+  }

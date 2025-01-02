@@ -1,0 +1,64 @@
+.popular-routes-title {
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+    padding-bottom: 15px; /* Reduced from 30px to 15px */
+}
+
+.popular-routes {
+    padding: 0 40px; /* You can also reduce this value if needed */
+    text-align: center;
+    height: max-content;
+    margin-top:0;
+}
+
+.route-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* To prevent overflow from the image */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%; /* Responsive image */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the card */
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0d4875;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
